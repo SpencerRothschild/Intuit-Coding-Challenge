@@ -80,7 +80,7 @@ public class Main{
             tmp[i] = true;
 
         /* Iterate until sqrt of the bound */
-        for (int i = 2; i <= Math.sqrt(bound); i++) {
+        for (int i = 2; i <= sqrt; i++) {
 
             if (tmp[i])
 
@@ -102,10 +102,10 @@ public class Main{
 
     /* get the upper bound of number */
     public static int getUpperBound(int n) {
-        if (n > 3) {
+        if (n > 5) {
             return (int) (n * (Math.log(n) + Math.log(Math.log(n))));
         } else {
-            return 5;
+            return 11;
         }
     }
 
